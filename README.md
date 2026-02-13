@@ -1,16 +1,21 @@
-task9-EL-
-Nmap Version Security-Level
+# task9-EL-
 
-📋 Project Overview
-This repository contains the documentation and methodology for a Network Vulnerability Scan. The goal was to identify live hosts, discover open ports, fingerprint services, and analyze security risks using Nmap.
+![Nmap Version](https://img.shields.io/badge/Tool-Nmap-blue.svg)
+![Security-Level](https://img.shields.io/badge/Task-Reconnaissance-green.svg)
 
-🛠 Tools Used
-Nmap: Primary tool for network discovery and security auditing.
-NSE (Nmap Scripting Engine): Used for automated vulnerability detection.
-Masscan (Optional): Used for high-speed initial network sweeps.
-🚀 Step-by-Step Implementation
-1. Host Discovery
+## 📋 Project Overview
+This repository contains the documentation and methodology for a **Network Vulnerability Scan**. The goal was to identify live hosts, discover open ports, fingerprint services, and analyze security risks using **Nmap**.
+
+## 🛠 Tools Used
+* **Nmap:** Primary tool for network discovery and security auditing.
+* **NSE (Nmap Scripting Engine):** Used for automated vulnerability detection.
+* **Masscan (Optional):** Used for high-speed initial network sweeps.
+
+## 🚀 Step-by-Step Implementation
+
+### 1. Host Discovery
 Scanned the local subnet to identify active devices.
+```bash
 sudo nmap -sn 192.168.1.0/24 -oN discovery.txt
 
 ### 2. Port & Service Enumeration
